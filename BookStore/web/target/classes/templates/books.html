@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      xmlns:th="http://www.thymeleaf.org"
+      xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml"
       layout:decorate="~{fragments/layout}">
 <head>
     <title>Books</title>
@@ -17,6 +17,7 @@
 </section>
 
 <section class="container">
+
     <div class="row">
         <th:block th:each="book : ${bookList}">
             <div class="col-sm-6 col-md-3" style="padding-bottom: 15px">
@@ -32,10 +33,23 @@
                                     class="glyphicon-info-sign glyphicon"/></span> Details
                             </a>
                         </p>
+                        <div sec:authorize="hasRole('ADMIN')">
+                            <div class="form-group">
+                                <div class="col-lg-offset-2 col-lg-10">
+                                    <a th:href="/books/afterAddBook">
+                                    <form action="#" th:action="@{books/${id}/removeBook}" th:object="${currentBook}" method="post" class="form-horizontal">
+                                      <input type="submit" id="btnRemove" class="btn btn-primary"
+                                           value="Remove"/>
+                                    </form>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
             </div>
+
         </th:block>
     </div>
 </section>

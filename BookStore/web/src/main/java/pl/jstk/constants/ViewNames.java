@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 public final class ViewNames implements Serializable {
 
+	public static final String BOOK = "book";
 	private static final long serialVersionUID = 1L;
 
 	public static final String ADD_BOOKS = "addBook";

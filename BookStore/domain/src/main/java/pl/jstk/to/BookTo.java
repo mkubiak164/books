@@ -24,6 +24,10 @@ public class BookTo {
         this.setStatus(status);
     }
 
+    public BookTo (Long id) {
+        this.id = id;
+    }
+
     public Long getId() {
         return id;
     }

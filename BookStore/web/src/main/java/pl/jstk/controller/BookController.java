@@ -42,7 +42,7 @@ public class BookController {
         model.addAttribute(ModelConstants.BOOK_LIST, bookTos);
         return ViewNames.BOOKS;
 	}
-	
+
 	@RequestMapping(value = "author", method = RequestMethod.GET)
 	public List<BookTo> getBooksByAuthor(@RequestParam String author) {
 		List<BookEntity> foundBooks = bookRepository.findBookByAuthor(author);
@@ -55,19 +55,20 @@ public class BookController {
 		return bookMapper.map2To(foundBooks);
 	}
 
-	@RequestMapping(value = "{id}", method = RequestMethod.GET)
-	public BookTo getBooksById(@PathParam("id") Long id) {
-		BookEntity foundBook = bookRepository.getOne(id);
-		return bookMapper.map(foundBook);
-	}
+	@RequestMapping(value = "/book", method = RequestMethod.GET)
+	public String getBooksById(@RequestParam("id") Long id, Model model) {
+	    BookEntity foundBook = bookRepository.getOne(id);
+        BookTo book = bookMapper.map(foundBook);
+        model.addAttribute(ModelConstants.BOOK, book);
+        return ViewNames.BOOK;
+    }
 	
 	@RequestMapping(value = "/addBook", method = RequestMethod.POST)
-	//public String addBook(@ModelAttribute("newBook") BookTo newBook) {
 	public String addBook(@RequestParam("title") String title, @RequestParam("authors") String authors, @RequestParam("status") BookStatus status) {
 		BookTo bookTo = new BookTo(title, authors, status);
 		BookEntity bookEntity = bookMapper.map(bookTo);
+
 		bookRepository.save(bookEntity);
-//		BookEntity addBook = bookRepository.addBook(bookEntity);
 		return "You add a book!";
 	}
 
@@ -76,6 +77,21 @@ public class BookController {
 		model.addAttribute(ModelConstants.NEW_BOOK, new BookTo());
 		return ViewNames.ADD_BOOKS;
 	}
+
+	@RequestMapping(value = "/removeBook", method = RequestMethod.POST)
+	public String removeBook(@RequestParam ("id") Long id) {
+		BookTo bookTo = new BookTo(id);
+		BookEntity bookEntity = bookMapper.map(bookTo);
+		bookRepository.delete(bookEntity);
+		return "You removed a book!";
+	}
+
+
+	/*@RequestMapping(value = "/removeBook", method = RequestMethod.POST)
+	public String bookRemove(Model model) {
+		model.addAttribute(ModelConstants.CURRENT_BOOK, new BookTo());
+		return "You removed a book";
+	}*/
 
 }
 
