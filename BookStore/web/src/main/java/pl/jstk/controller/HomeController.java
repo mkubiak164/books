@@ -6,6 +6,7 @@ import pl.jstk.constants.ViewNames;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import pl.jstk.to.BookTo;
 
 @Controller
 public class HomeController {
@@ -20,6 +21,12 @@ public class HomeController {
         return ViewNames.WELCOME;
     }
 
+    @GetMapping(value = "/findBook")
+    public String search(Model model) {
+      //  model.addAttribute(ModelConstants.MESSAGE, WELCOME);
+        model.addAttribute(ModelConstants.SEARCHED_BOOK, new BookTo());
+        return ViewNames.FIND_BOOK;
+    }
 
 
 }

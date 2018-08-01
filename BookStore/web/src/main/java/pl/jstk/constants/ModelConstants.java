@@ -7,6 +7,7 @@ import java.io.Serializable;
 public final class ModelConstants implements Serializable {
 
 	public static final String BOOK = "book";
+	public static final String SEARCHED_BOOK = "searchedBook";
 	private static final long serialVersionUID = 1L;
 
 	public static final String MESSAGE = "message";
@@ -16,4 +17,6 @@ public final class ModelConstants implements Serializable {
 
 	public static final String CURRENT_BOOK = "currentBook";
 	public static final String PROFILE = "profile";
+	public static final String FOUND_BOOKS = "foundBooks";
+
 }

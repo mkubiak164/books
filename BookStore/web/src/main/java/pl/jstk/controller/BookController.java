@@ -3,10 +3,13 @@ package pl.jstk.controller;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -15,6 +18,7 @@ import pl.jstk.constants.ModelConstants;
 import pl.jstk.constants.ViewNames;
 import pl.jstk.entity.BookEntity;
 import pl.jstk.enumerations.BookStatus;
+import pl.jstk.exceptions.BookNotFoundException;
 import pl.jstk.mapper.BookMapper;
 import pl.jstk.repository.BookRepository;
 import pl.jstk.to.BookTo;
@@ -69,7 +73,7 @@ public class BookController {
 		BookEntity bookEntity = bookMapper.map(bookTo);
 
 		bookRepository.save(bookEntity);
-		return "You add a book!";
+		return ViewNames.BOOK_ADDED;
 	}
 
 	@RequestMapping(value = "add", method = RequestMethod.GET)
@@ -78,20 +82,19 @@ public class BookController {
 		return ViewNames.ADD_BOOKS;
 	}
 
-	@RequestMapping(value = "/removeBook", method = RequestMethod.POST)
-	public String removeBook(@RequestParam ("id") Long id) {
-		BookTo bookTo = new BookTo(id);
-		BookEntity bookEntity = bookMapper.map(bookTo);
-		bookRepository.delete(bookEntity);
-		return "You removed a book!";
+	@Secured("ADMIN")
+	@RequestMapping(value = "/{id}/removeBook", method = RequestMethod.POST)
+	public String removeBook(@PathVariable("id") Long id) {
+
+		Optional<BookEntity> bookEntity = bookRepository.findById(id);
+		if (bookEntity.isPresent()) {
+			bookRepository.delete(bookEntity.get());
+		} else {
+			throw new BookNotFoundException();
+		}
+		return ViewNames.BOOK_REMOVED;
 	}
 
-
-	/*@RequestMapping(value = "/removeBook", method = RequestMethod.POST)
-	public String bookRemove(Model model) {
-		model.addAttribute(ModelConstants.CURRENT_BOOK, new BookTo());
-		return "You removed a book";
-	}*/
 
 }
 

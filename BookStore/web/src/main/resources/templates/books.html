@@ -33,18 +33,18 @@
                                     class="glyphicon-info-sign glyphicon"/></span> Details
                             </a>
                         </p>
-                        <div sec:authorize="hasRole('ADMIN')">
+                       <!-- <div sec:authorize="hasRole('ADMIN')">
                             <div class="form-group">
                                 <div class="col-lg-offset-2 col-lg-10">
-                                    <a th:href="/books/afterAddBook">
-                                    <form action="#" th:action="@{books/${id}/removeBook}" th:object="${currentBook}" method="post" class="form-horizontal">
+                                    <a th:href="/books/afterAddBook">-->
+                                    <form action="#" th:action="@{'books/'+ ${book.id} + '/removeBook'}" th:object="${book.id}" method="post" class="form-horizontal">
                                       <input type="submit" id="btnRemove" class="btn btn-primary"
                                            value="Remove"/>
                                     </form>
-                                    </a>
+                                    <!--</a>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
 
                     </div>
                 </div>
