@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="188bb26d-f6e6-4c2e-a0d2-39d7e6e7b17a" name="Default Changelist" comment="1st exercise complete (without tests), 2 more or less not all">
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/404.html" afterDir="false" />
+    <list default="true" id="188bb26d-f6e6-4c2e-a0d2-39d7e6e7b17a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ModelConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ModelConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/test/java/pl/jstk/controller/BookControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/test/java/pl/jstk/controller/BookControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/templates/books.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/pl/jstk/constants/ModelConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/pl/jstk/constants/ModelConstants.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/domain/target/" />
     <ignored path="$PROJECT_DIR$/web/target/" />
@@ -48,7 +45,7 @@
         <counts>
           <entry key="class" value="31" />
           <entry key="html" value="61" />
-          <entry key="java" value="106" />
+          <entry key="java" value="107" />
           <entry key="properties" value="3" />
           <entry key="sql" value="1" />
           <entry key="xml" value="4" />
@@ -58,7 +55,7 @@
         <counts>
           <entry key="CLASS" value="31" />
           <entry key="HTML" value="61" />
-          <entry key="JAVA" value="106" />
+          <entry key="JAVA" value="107" />
           <entry key="Properties" value="3" />
           <entry key="SQL" value="1" />
           <entry key="XML" value="4" />
@@ -68,7 +65,7 @@
         <counts>
           <entry key="html" value="926" />
           <entry key="java" value="4693" />
-          <entry key="txt" value="447" />
+          <entry key="txt" value="471" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
@@ -76,7 +73,7 @@
         <counts>
           <entry key="HTML" value="926" />
           <entry key="JAVA" value="4693" />
-          <entry key="PLAIN_TEXT" value="447" />
+          <entry key="PLAIN_TEXT" value="471" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
@@ -87,7 +84,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/test/java/pl/jstk/controller/BookControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
+            <state relative-caret-position="960">
               <caret line="126" column="75" selection-start-line="126" selection-start-column="75" selection-end-line="126" selection-end-column="75" />
               <folding>
                 <element signature="e#2169#2181#0" expanded="true" />
@@ -119,11 +116,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/BookController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-74">
-              <caret line="66" column="52" lean-forward="true" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
+            <state relative-caret-position="241">
+              <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/ExceptionController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-69">
+              <caret line="14" selection-start-line="14" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -466,9 +475,10 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="debu&#9;ACTION&#9;ActivateDebugToolWindow&#10;deb&#9;ACTION&#9;ActivateDebugToolWindow&#10;Sec&#9;FILE&#9;file://C:/Projects/BookStore/BookStore/web/src/main/java/pl/jstk/config/SecurityConfig.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533234682144" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533236243782" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../UserProfileAndRanking/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -646,7 +656,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533229842492</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add tests to exercise 1">
+      <created>1533234734730</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1533234734730</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -694,7 +711,7 @@
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25778732" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25778732" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -712,7 +729,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053704" side_tool="true" weight="0.3920904" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.5220339" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3299435" />
-      <window_info active="true" anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.32975295" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32277122" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -761,7 +778,8 @@
     <MESSAGE value="searching quite perfect, 1 passing test, showing who is logged, login button unvisible for admin and user" />
     <MESSAGE value="visibility for buttons login and logout" />
     <MESSAGE value="1st exercise complete (without tests), 2 more or less not all" />
-    <option name="LAST_COMMIT_MESSAGE" value="1st exercise complete (without tests), 2 more or less not all" />
+    <MESSAGE value="add tests to exercise 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tests to exercise 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1047,18 +1065,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/ExceptionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
-            <element signature="e#994#995#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/config/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
@@ -1168,18 +1174,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/test/java/pl/jstk/controller/BookControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="126" column="75" selection-start-line="126" selection-start-column="75" selection-end-line="126" selection-end-column="75" />
-          <folding>
-            <element signature="e#2169#2181#0" expanded="true" />
-            <element signature="e#2801#2809#0" expanded="true" />
-            <element signature="e#3437#3449#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
@@ -1190,10 +1184,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/test/java/pl/jstk/controller/BookControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="126" column="75" selection-start-line="126" selection-start-column="75" selection-end-line="126" selection-end-column="75" />
+          <folding>
+            <element signature="e#2169#2181#0" expanded="true" />
+            <element signature="e#2801#2809#0" expanded="true" />
+            <element signature="e#3437#3449#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/BookController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74">
-          <caret line="66" column="52" lean-forward="true" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
+        <state relative-caret-position="241">
+          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/ExceptionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="14" selection-start-line="14" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
