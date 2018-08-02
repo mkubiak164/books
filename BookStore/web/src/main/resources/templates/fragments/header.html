@@ -25,12 +25,15 @@
 
                 <ul class="nav navbar-nav navbar-right">
 
-                  <div sec:authorize="hasAnyRole('USER', 'ADMIN')">
+                  <div sec:authorize="isAuthenticated()">
                     <li  style="display: inline-block;">
                         <a th:href="@{/logout}"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
                   </div>
+
+                    <div sec:authorize="!isAuthenticated()">
                     <li  style="display: inline-block;"><a th:href="@{/login}"><span
                             class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </div>
                 </ul>
             </div>
             <div>
