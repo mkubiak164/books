@@ -13,7 +13,9 @@ public final class ViewNames implements Serializable {
 	public static final String WELCOME = "welcome";
 	public static final String BOOK_ADDED = "afterAddBook";
 	public static final String BOOK_REMOVED = "afterRemoveBook";
-	public static final String ERROR = "403";
+	public static final String NOT_FOUND = "404";
+	public static final String FORBIDDEN = "403";
+	public static final String BOOK_NOT_FOUND = "bookNotFound";
 	public static final String SEARCH = "search";
 	public static final String FIND_BOOK = "findBook";
 

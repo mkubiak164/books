@@ -7,6 +7,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -88,7 +89,7 @@ public class BookController {
 		return ViewNames.ADD_BOOKS;
 	}
 
-	@Secured("ADMIN")
+	@PreAuthorize("hasRole('ADMIN')")
 	@RequestMapping(value = "/{id}/removeBook", method = RequestMethod.POST)
 	public String removeBook(@PathVariable("id") Long id) throws BookNotFoundException {
 

@@ -1,15 +1,17 @@
 package pl.jstk.controller;
 
-import pl.jstk.constants.ModelConstants;
-
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import pl.jstk.BookApplication;
+import pl.jstk.constants.ModelConstants;
 
 import static org.hamcrest.core.StringContains.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -21,6 +23,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
+@ContextConfiguration(classes = {BookApplication.class})
+@WebAppConfiguration
 public class HomeControllerTest {
 
     private MockMvc mockMvc;
@@ -36,13 +40,11 @@ public class HomeControllerTest {
         ResultActions resultActions = mockMvc.perform(get("/"));
         // then
         resultActions.andExpect(status().isOk())
-                     .andExpect(view().name("welcome"))
-                     .andDo(print())
-                     .andExpect(model().attribute(ModelConstants.MESSAGE, HomeController.WELCOME))
-                     .andExpect(content().string(containsString("")));
+                .andExpect(view().name("welcome"))
+                .andDo(print())
+                .andExpect(model().attribute(ModelConstants.MESSAGE, HomeController.WELCOME))
+                .andExpect(content().string(containsString("")));
 
     }
-
-
 
 }

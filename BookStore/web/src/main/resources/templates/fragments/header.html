@@ -18,9 +18,11 @@
                     <li>
                         <a th:href="@{/books}">Books</a>
                     </li>
+                    <div sec:authorize="isAuthenticated()">
                     <li>
                         <a> You are logged as: <a sec:authentication="name"></a> </a>
                     </li>
+                    </div>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
