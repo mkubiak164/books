@@ -60,12 +60,18 @@ public class BookController {
 	}
 
 	@RequestMapping(value = "/book", method = RequestMethod.GET)
-	public String getBooksById(@RequestParam("id") Long id, Model model) {
+	public String getBooksById(@RequestParam("id") Long id, Model model) throws BookNotFoundException  {
 	    BookEntity foundBook = bookRepository.getOne(id);
-        BookTo book = bookMapper.map(foundBook);
-        model.addAttribute(ModelConstants.BOOK, book);
+        if(foundBook != null) {
+			BookTo book = bookMapper.map(foundBook);
+			model.addAttribute(ModelConstants.BOOK, book);
+		}
+		else {
+			throw new BookNotFoundException(id);
+		}
         return ViewNames.BOOK;
     }
+
 	
 	@RequestMapping(value = "/addBook", method = RequestMethod.POST)
 	public String addBook(@RequestParam("title") String title, @RequestParam("authors") String authors, @RequestParam("status") BookStatus status) {
@@ -84,13 +90,13 @@ public class BookController {
 
 	@Secured("ADMIN")
 	@RequestMapping(value = "/{id}/removeBook", method = RequestMethod.POST)
-	public String removeBook(@PathVariable("id") Long id) {
+	public String removeBook(@PathVariable("id") Long id) throws BookNotFoundException {
 
 		Optional<BookEntity> bookEntity = bookRepository.findById(id);
 		if (bookEntity.isPresent()) {
 			bookRepository.delete(bookEntity.get());
 		} else {
-			throw new BookNotFoundException();
+			throw new BookNotFoundException(id);
 		}
 		return ViewNames.BOOK_REMOVED;
 	}

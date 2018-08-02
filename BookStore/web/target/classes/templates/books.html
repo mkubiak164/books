@@ -4,6 +4,7 @@
       layout:decorate="~{fragments/layout}">
 <head>
     <title>Books</title>
+
 </head>
 <body>
 <div layout:fragment="content" th:remove="tag">
@@ -12,9 +13,12 @@
         <div class="container">
             <h1>Books</h1>
             <p>This page contains all informations about books</p>
+           <!-- <p>Logged in as <span sec:authentication="username" /> with authorities: <span sec:authentication="roles" /></p>-->
         </div>
     </div>
 </section>
+
+
 
 <section class="container">
 

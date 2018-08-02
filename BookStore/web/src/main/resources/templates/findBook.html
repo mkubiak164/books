@@ -10,13 +10,13 @@
     <section>
         <div class="jumbotron">
             <div class="container">
-                <h1>Book</h1>
-                <p>Add new book</p>
+                <h1>Books</h1>
+                <p>Find your book</p>
             </div>
         </div>
     </section>
     <section class="container">
-        <form action="#" th:action="@{/search}" th:object="${searchedBook}" method="post" class="form-horizontal">
+        <form action="#" th:action="@{/findBook}" th:object="${newBook}" method="post" class="form-horizontal">
             <fieldset>
                 <legend>Find a book</legend>
 

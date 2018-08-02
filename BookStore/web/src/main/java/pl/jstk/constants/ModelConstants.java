@@ -18,5 +18,9 @@ public final class ModelConstants implements Serializable {
 	public static final String CURRENT_BOOK = "currentBook";
 	public static final String PROFILE = "profile";
 	public static final String FOUND_BOOKS = "foundBooks";
+	public static final String SEARCH = "search";
+	public static final String FIND_BOOK = "findBook";
+
+
 
 }

@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="188bb26d-f6e6-4c2e-a0d2-39d7e6e7b17a" name="Default Changelist" comment="login works">
+    <list default="true" id="188bb26d-f6e6-4c2e-a0d2-39d7e6e7b17a" name="Default Changelist" comment="add searching books">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/books.db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/books.db.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/pl/jstk/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/pl/jstk/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ExceptionController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ModelConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ModelConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/SearchController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ViewNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ViewNames.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/afterAddBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/afterAddBook.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/afterRemoveBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/afterRemoveBook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/ExceptionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/pl/jstk/exceptions/BookNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/pl/jstk/exceptions/BookNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/403.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/403.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/addBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/addBook.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/books.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/welcome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/pl/jstk/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/pl/jstk/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/findBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/findBook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/foundBooks.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/fragments/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/test/java/pl/jstk/controller/BookControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/test/java/pl/jstk/controller/BookControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/test/java/pl/jstk/controller/HomeControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/test/java/pl/jstk/controller/HomeControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/classes/pl/jstk/constants/ViewNames.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/pl/jstk/constants/ViewNames.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/classes/pl/jstk/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/pl/jstk/controller/BookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/403.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/templates/403.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/addBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/templates/addBook.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/classes/templates/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/templates/books.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/domain/target/" />
@@ -36,47 +44,47 @@
     <session id="-263894128">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.11" value="2" />
-          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.23" value="2" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="10" />
-          <entry key="html" value="31" />
-          <entry key="java" value="50" />
+          <entry key="class" value="13" />
+          <entry key="html" value="45" />
+          <entry key="java" value="72" />
           <entry key="properties" value="3" />
           <entry key="sql" value="1" />
-          <entry key="xml" value="3" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="10" />
-          <entry key="HTML" value="31" />
-          <entry key="JAVA" value="50" />
+          <entry key="CLASS" value="13" />
+          <entry key="HTML" value="45" />
+          <entry key="JAVA" value="72" />
           <entry key="Properties" value="3" />
           <entry key="SQL" value="1" />
-          <entry key="XML" value="3" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="373" />
-          <entry key="java" value="3298" />
-          <entry key="txt" value="11" />
+          <entry key="html" value="599" />
+          <entry key="java" value="4066" />
+          <entry key="txt" value="43" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="373" />
-          <entry key="JAVA" value="3298" />
-          <entry key="PLAIN_TEXT" value="11" />
+          <entry key="HTML" value="599" />
+          <entry key="JAVA" value="4066" />
+          <entry key="PLAIN_TEXT" value="43" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
@@ -85,10 +93,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/BookController.java">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/SearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="45" column="45" lean-forward="true" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
+            <state relative-caret-position="357">
+              <caret line="32" column="27" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,10 +105,61 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/SearchController.java">
+        <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/book.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-105">
-              <caret line="13" column="22" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="22" />
+            <state relative-caret-position="210">
+              <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/fragments/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ModelConstants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/ExceptionController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/findBook.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/config/SecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="27" column="65" lean-forward="true" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,64 +168,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/HomeController.java">
+        <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="19" column="59" lean-forward="true" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/addBook.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ModelConstants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/foundBooks.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/findBook.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="32" column="75" selection-start-line="32" selection-start-column="68" selection-end-line="32" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/books.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="39" column="89" selection-start-line="39" selection-start-column="89" selection-end-line="39" selection-end-column="89" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#th:block#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="315">
+              <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -174,8 +179,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ViewNames.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+            <state relative-caret-position="189">
+              <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -186,8 +191,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit4 Test Class" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -207,28 +212,34 @@
         <option value="$PROJECT_DIR$/persistence/src/main/java/pl/jstk/mapper/BookMapper.java" />
         <option value="$PROJECT_DIR$/domain/src/main/java/pl/jstk/to/BookTo.java" />
         <option value="$PROJECT_DIR$/web/src/main/resources/templates/fragments/afterAddBook.html" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/templates/addBook.html" />
         <option value="$PROJECT_DIR$/domain/src/main/java/pl/jstk/entity/BookEntity.java" />
-        <option value="$PROJECT_DIR$/web/pom.xml" />
-        <option value="$PROJECT_DIR$/web/src/test/java/pl/jstk/controller/BookControllerTest.java" />
         <option value="$PROJECT_DIR$/web/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/web/src/main/java/pl/jstk/config/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/templates/books.html" />
         <option value="$PROJECT_DIR$/web/src/main/resources/templates/afterAddBook.html" />
         <option value="$PROJECT_DIR$/web/src/main/resources/templates/afterRemoveBook.html" />
-        <option value="$PROJECT_DIR$/web/src/main/java/pl/jstk/exceptions/BookNotFoundException.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ExceptionControler.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ExceptionController.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/BookController.java" />
         <option value="$PROJECT_DIR$/persistence/src/main/java/pl/jstk/repository/BookRepository.java" />
         <option value="$PROJECT_DIR$/web/src/main/resources/templates/foundBooks.html" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/templates/findBook.html" />
         <option value="$PROJECT_DIR$/web/src/main/resources/templates/welcome.html" />
-        <option value="$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/SearchController.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ViewNames.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ModelConstants.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/templates/addBook.html" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ExceptionController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ExceptionsJSONInfo.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/BookController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/templates/403.html" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pl/jstk/exceptions/BookNotFoundException.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ViewNames.java" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/templates/findBook.html" />
+        <option value="$PROJECT_DIR$/web/pom.xml" />
+        <option value="$PROJECT_DIR$/web/src/test/java/pl/jstk/controller/BookControllerTest.java" />
+        <option value="$PROJECT_DIR$/web/src/test/java/pl/jstk/controller/HomeControllerTest.java" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/templates/books.html" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/templates/fragments/header.html" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ModelConstants.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/ExceptionController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/SearchController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/templates/search.html" />
       </list>
     </option>
   </component>
@@ -240,7 +251,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="641" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
     <option name="width" value="1291" />
     <option name="height" value="992" />
   </component>
@@ -252,14 +264,60 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="book" type="b2602c69:ProjectViewProjectNode" />
               <item name="BookStore" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jstk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jstk" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="book" type="b2602c69:ProjectViewProjectNode" />
@@ -351,7 +409,26 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="fragments" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="book" type="b2602c69:ProjectViewProjectNode" />
@@ -381,13 +458,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="Sec&#9;FILE&#9;file://C:/Projects/BookStore/BookStore/web/src/main/java/pl/jstk/config/SecurityConfig.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533164574787" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533209309408" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -396,6 +472,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="pl.jstk.controller" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="pl.jstk.controller" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -431,6 +510,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BookControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.jstk.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.jstk.controller" />
+      <option name="MAIN_CLASS_NAME" value="pl.jstk.controller.BookControllerTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BookControllerTest.shouldAllBooks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="web" />
       <extension name="coverage">
@@ -450,10 +543,12 @@
     <list>
       <item itemvalue="Application.BookApplication" />
       <item itemvalue="JUnit.BookControllerTest.shouldAllBooks" />
+      <item itemvalue="JUnit.BookControllerTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.BookApplication" />
+        <item itemvalue="JUnit.BookControllerTest" />
         <item itemvalue="JUnit.BookControllerTest.shouldAllBooks" />
       </list>
     </recent_temporary>
@@ -476,12 +571,32 @@
       <option name="project" value="LOCAL" />
       <updated>1533157166842</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add searching books">
+      <created>1533164557152</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1533164557152</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add searching books">
+      <created>1533164625817</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1533164625817</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="BookControllerTest_shouldAllBooks - 2018.08.01 at 20h 52m 18s.xml">
       <configuration name="BookControllerTest.shouldAllBooks" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookControllerTest - 2018.08.02 at 12h 52m 32s.xml">
+      <configuration name="BookControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookControllerTest - 2018.08.02 at 13h 01m 50s.xml">
+      <configuration name="BookControllerTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -497,7 +612,7 @@
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21804512" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22126746" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -506,7 +621,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3920904" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3920904" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -558,7 +673,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="login works" />
-    <option name="LAST_COMMIT_MESSAGE" value="login works" />
+    <MESSAGE value="add searching books" />
+    <option name="LAST_COMMIT_MESSAGE" value="add searching books" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -599,13 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/book.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="10" lean-forward="true" selection-start-line="9" selection-end-line="15" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Desktop/${env.BASE_DIR}/maven/repo/org/springframework/spring-context/5.0.7.RELEASE/spring-context-5.0.7.RELEASE.jar!/org/springframework/ui/Model.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -617,13 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-21">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/ExceptionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -648,24 +750,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domain/src/main/java/pl/jstk/entity/UserEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/persistence/src/main/resources/import.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="70" lean-forward="true" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="93" column="20" lean-forward="true" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -697,13 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -745,54 +826,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/config/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/afterRemoveBook.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/exceptions/BookNotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/403.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ExceptionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/test/java/pl/jstk/controller/BookControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
@@ -803,102 +840,241 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/pl/jstk/repository/BookRepository.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/afterAddBook.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="13" lean-forward="true" selection-end-line="32" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/welcome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="60" column="94" selection-start-line="60" selection-start-column="94" selection-end-line="60" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/addBook.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ViewNames.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ModelConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="399">
+          <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/foundBooks.html">
+    <entry file="jar://$USER_HOME$/Desktop/${env.BASE_DIR}/maven/repo/org/springframework/boot/spring-boot/2.0.3.RELEASE/spring-boot-2.0.3.RELEASE.jar!/org/springframework/boot/web/servlet/context/ServletWebServerApplicationContext.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        <state relative-caret-position="210">
+          <caret line="63" column="43" lean-forward="true" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/findBook.html">
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/ExceptionController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="32" column="75" selection-start-line="32" selection-start-column="68" selection-end-line="32" selection-end-column="75" />
+        <state relative-caret-position="357">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/${env.BASE_DIR}/maven/repo/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE.jar!/org/springframework/http/HttpStatus.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ExceptionsJSONInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding>
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/403.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/exceptions/BookNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/pl/jstk/repository/BookRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/${env.BASE_DIR}/maven/repo/org/springframework/spring-webmvc/5.0.7.RELEASE/spring-webmvc-5.0.7.RELEASE.jar!/org/springframework/web/servlet/ModelAndView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/afterAddBook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/addBook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-189">
+          <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/test/java/pl/jstk/controller/HomeControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/test/java/pl/jstk/controller/BookControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="e#2169#2181#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/pl/jstk/entity/UserEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/books.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="39" column="89" selection-start-line="39" selection-start-column="89" selection-end-line="39" selection-end-column="89" />
+        <state relative-caret-position="126">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
           <folding>
             <element signature="n#style#0;n#div#0;n#th:block#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/BookController.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/config/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="45" column="45" lean-forward="true" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
+        <state relative-caret-position="218">
+          <caret line="27" column="65" lean-forward="true" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ViewNames.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/book.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/fragments/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/ModelConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/ExceptionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/BookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1344">
+          <caret line="100" column="38" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/findBook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/constants/SearchController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="357">
+          <caret line="32" column="27" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/jstk/controller/HomeController.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="19" column="59" lean-forward="true" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="315">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
         </state>
       </provider>
     </entry>
