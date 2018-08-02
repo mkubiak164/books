@@ -14,12 +14,10 @@ public final class ModelConstants implements Serializable {
 	public static final String INFO = "info";
 	public static final String NEW_BOOK = "newBook";
 	public static final String BOOK_LIST = "bookList";
-
 	public static final String CURRENT_BOOK = "currentBook";
 	public static final String PROFILE = "profile";
-	public static final String FOUND_BOOKS = "foundBooks";
 	public static final String SEARCH = "search";
-	public static final String FIND_BOOK = "findBook";
+	public static final String FIND_BOOK = "book";
 
 
 

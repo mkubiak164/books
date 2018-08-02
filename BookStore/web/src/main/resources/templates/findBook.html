@@ -16,7 +16,7 @@
         </div>
     </section>
     <section class="container">
-        <form action="#" th:action="@{/findBook}" th:object="${newBook}" method="post" class="form-horizontal">
+        <form action="#" th:action="@{/search/book}" th:object="${book}" method="post" class="form-horizontal">
             <fieldset>
                 <legend>Find a book</legend>
 
@@ -39,12 +39,7 @@
                 <div class="col-lg-offset-2 col-lg-10">
                     <input type="submit" id="btnAdd" class="btn btn-primary"
                            value="Search"/>
-                    <!-- <p>
-                         <a th:href="@{'/books/afterAddBook}"
-                            class="btn btn-primary"> <span
-                                 class="glyphicon-info-sign glyphicon"/></span> Details
-                         </a>
-                     </p>-->
+
                 </div>
             </div>
         </form>

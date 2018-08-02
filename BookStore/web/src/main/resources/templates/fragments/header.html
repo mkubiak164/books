@@ -19,15 +19,16 @@
                         <a th:href="@{/books}">Books</a>
                     </li>
                     <li>
-                       <!-- <a th:text="'You are logged as ' + ${userName} + ' with role '"  sec:authentication="role"></a>-->
-                        <a th:text="'You are logged as ' + ${username} "></a>
-
+                        <a> You are logged as: <a sec:authentication="name"></a> </a>
                     </li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
+
+                  <div sec:authorize="hasAnyRole('USER', 'ADMIN')">
                     <li  style="display: inline-block;">
                         <a th:href="@{/logout}"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+                  </div>
                     <li  style="display: inline-block;"><a th:href="@{/login}"><span
                             class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
